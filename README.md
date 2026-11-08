@@ -4,7 +4,37 @@ Fundación Universitaria Compensar · Ciencia de Datos · Estructura de Datos 23
 
 Programa en Java por consola para el registro y manejo de la biblioteca de la universidad. Los
 libros se guardan en un **arreglo bidimensional** `String[][]`: una fila por libro y una columna
-por dato (código, nombre, autor, materia y número de páginas). Desde un menú se puede:
+por dato (código, nombre, autor, materia y número de páginas).
+
+## Cómo correrlo
+
+Con Java 21 o superior y Maven, desde la carpeta del proyecto (donde está el `pom.xml`):
+
+```bash
+mvn spring-boot:run
+```
+
+Maven compila el proyecto y lo arranca en la misma terminal. Aparece el menú:
+
+```
+===== Biblioteca Universidad Compensar =====
+1. Registrar libro
+2. Actualizar libro
+3. Eliminar libro
+4. Buscar libro
+5. Ordenar libros
+6. Mostrar libros
+0. Salir
+Opción:
+```
+
+Se escribe el número de la opción y se sigue lo que va pidiendo. Por ejemplo, `1` pide el código,
+el nombre, el autor, la materia y el número de páginas del libro; `5` pide el campo y el método
+de ordenamiento y muestra la tabla ordenada. `0` sale del programa.
+
+## Qué hace
+
+Desde un menú se puede:
 
 1. **Registrar** un libro nuevo.
 2. **Actualizar** un libro (por su código).
@@ -17,7 +47,7 @@ por dato (código, nombre, autor, materia y número de páginas). Desde un menú
 Está hecho con Spring Boot y Lombok como aplicación de consola (sin servidor web). Los
 algoritmos de ordenamiento y búsqueda están escritos a mano, siguiendo la guía de la Unidad 2.
 
-## Cómo correrlo
+## Requisitos y otras formas de correrlo
 
 ### 1. Requisitos
 
@@ -53,18 +83,18 @@ Java antes de compilar:
 
   En Windows (PowerShell): `$env:JAVA_HOME="C:\ruta\al\jdk-21"; $env:Path="$env:JAVA_HOME\bin;$env:Path"`
 
-### 3. Compilar y correr
+### 3. Compilar y correr el jar
 
-Desde la carpeta del proyecto (donde está el `pom.xml`):
+En vez de `mvn spring-boot:run` se puede generar el jar y correrlo con Java:
 
 ```bash
 mvn package
-java -jar target/data-structures-deepening-library-1.0.0.jar
+java -jar target/data-structures-deepening-library-1.0.1.jar
 ```
 
 ### En NetBeans
 
-*File → Open Project* sobre esta carpeta y *Run*. NetBeans 31 trae soporte para JDK 21, 25 y 27;
+*File → Open Project* sobre esta carpeta y *Run*. NetBeans 31 trabaja con los JDK 21, 25 y 26;
 si el proyecto no compila, revisar en *Tools → Java Platforms* que el JDK del proyecto sea 21 o
 superior.
 
