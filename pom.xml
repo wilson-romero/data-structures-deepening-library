@@ -13,7 +13,7 @@
 
     <groupId>co.edu.ucompensar</groupId>
     <artifactId>data-structures-deepening-library</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <packaging>jar</packaging>
     <name>Estructura de Datos - Profundización (biblioteca)</name>
 
@@ -52,7 +52,7 @@
                     </annotationProcessorPaths>
                 </configuration>
             </plugin>
-            <!-- Builds an executable jar: java -jar target/data-structures-deepening-library-1.0.1.jar -->
+            <!-- Builds an executable jar: java -jar target/data-structures-deepening-library-1.0.2.jar -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>

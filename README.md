@@ -89,7 +89,7 @@ En vez de `mvn spring-boot:run` se puede generar el jar y correrlo con Java:
 
 ```bash
 mvn package
-java -jar target/data-structures-deepening-library-1.0.1.jar
+java -jar target/data-structures-deepening-library-1.0.2.jar
 ```
 
 ### En NetBeans
