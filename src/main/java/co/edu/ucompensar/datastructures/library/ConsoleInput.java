@@ -1,6 +1,7 @@
 package co.edu.ucompensar.datastructures.library;
 
 import java.io.PrintStream;
+import java.nio.charset.Charset;
 import java.util.Scanner;
 
 import org.springframework.stereotype.Component;
@@ -9,7 +10,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class ConsoleInput {
 
-    private final Scanner scanner = new Scanner(System.in);
+    /** Reads with the console's own charset, so accents typed in a Windows console (cp850) arrive intact. */
+    private final Scanner scanner = new Scanner(System.in,
+            System.console() != null ? System.console().charset() : Charset.defaultCharset());
     private final PrintStream out = System.out;
 
     /** An integer between {@code min} and {@code max}, both included. */
