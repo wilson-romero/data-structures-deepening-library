@@ -52,7 +52,7 @@
                     </annotationProcessorPaths>
                 </configuration>
             </plugin>
-            <!-- Builds an executable jar: java -jar target/data-structures-deepening-library-1.0.0.jar -->
+            <!-- Builds an executable jar: java -jar target/data-structures-deepening-library-1.0.1.jar -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
