@@ -115,7 +115,7 @@ public class BookCatalog {
         for (int i = 0; i < size; i++) {
             out.printf("%-6d", i);
             for (BookField field : fields) {
-                out.printf("%-" + field.getWidth() + "s", books[i][field.getColumn()]);
+                out.printf("%-" + field.getWidth() + "." + (field.getWidth() - 1) + "s", books[i][field.getColumn()]);
             }
             out.println();
         }
