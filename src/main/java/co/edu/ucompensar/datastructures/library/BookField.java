@@ -13,8 +13,8 @@ public enum BookField {
 
     CODE(0, "Código", true, 8),
     NAME(1, "Nombre", false, 34),
-    AUTHOR(2, "Autor", false, 24),
-    SUBJECT(3, "Materia", false, 20),
+    AUTHOR(2, "Autor", false, 26),
+    SUBJECT(3, "Materia", false, 22),
     PAGES(4, "Páginas", true, 8);
 
     /** Spanish alphabetical order: ignores case and keeps an accented letter next to its base letter. */
